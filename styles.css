@@ -1,0 +1,114 @@
+html {
+	box-sizing: border-box;
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 14px;
+}
+*, *::before, *::after {
+	box-sizing: inherit;
+}
+
+ul {
+	list-style-type: none;
+}
+
+.topbar {
+	width: 100%;
+	margin-bottom: 2px solid rgb(49,49,49)
+}
+
+/*--------------*/
+/*-left top bar-*/
+/*--------------*/
+.topbarLeft {
+	display: flex;
+	flex-direction: row;
+	margin-top: 15px;
+}
+
+#etsyLogo img{
+	width: 110px;
+}
+
+#sEntry {
+	border: solid 2px #000;
+	border-radius: 3px;
+	margin-top: 15px;
+	margin-left: 15px;
+}
+
+#searchText #search {
+	height: 30px;
+	width: 200px;
+	line-height: 30px;
+	border: none;
+}
+
+#searchText #search:focus {
+	border-color: #000;
+	outline-style: none;
+	box-shadow: none;
+}
+
+#searchButton {
+	height: 30px;
+	width: 100px;
+	line-height: 25px;
+	background-color: rgb(31,31,31);
+	color: rgb(243,243,243);
+	border: none;
+}
+
+#searchButton:focus {
+	border-color: rgb(204,204,204);
+	outline-style: none;
+	box-shadow: none;
+}
+
+/*---------------*/
+/*-right top bar-*/
+/*---------------*/
+
+.topbarRight {
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-end;
+	margin-top: -62px;
+	height: 30px;
+	line-height: 30px;
+}
+
+.topbarRight a {
+	text-decoration: none;
+	color: rgb(49,49,49);
+}
+
+.topbarRight a:visited {
+	color: rgb(49,49,49);
+}
+
+#sellOnEtsy a:hover, #register a:hover {
+	text-decoration: underline;
+}
+
+#sellOnEtsy, #register, #signIn {
+	margin-right: 12px;
+}
+
+#signIn a {
+	border: 1px solid rgb(31,31,31);
+	padding: 6px;
+	border-radius: 3px;
+}
+
+#signIn a:hover {
+	background-color: rgb(31,31,31);
+	color: white;
+}
+
+#cart {
+	opacity: 0.6;
+}
+
+#cart:hover {
+	opacity: 1;
+}
