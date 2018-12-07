@@ -187,3 +187,110 @@ ul {
 	text-decoration: none;
 	color: rgb(49,49,49);
 }
+/*----------------*/
+/*-sidebar-general*/
+/*----------------*/
+.sidebar {
+	width: 270px;
+	height: 700px;
+	border: 1px solid rgba(31,31,31,0.3);
+	display: flex;
+	flex-direction: column;
+}
+/*----------------*/
+/*-special-offers-*/
+/*----------------*/
+.specialOffers {
+	background: rgb(250,231,210);
+	width: 250px;
+	height: 66px;
+	border-radius: 3px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	margin: 8px;
+}
+
+#specOffLabel {
+	margin-top: -10px;
+	margin-left: -18px;
+	font-weight: bolder;
+}
+/*--making my own checkbox--*/
+.checkLabel {
+	margin-top: -10px;
+	margin-left: -8px;
+	font-size: 12px;
+}
+
+.checkLabel input {
+	position: absolute;
+	opacity: 0;
+	cursor: pointer;
+	height: 0;
+	width: 0;
+}
+
+.checkmark {
+	position: absolute;
+	top: 232px;
+	left: 24px;
+	height: 20px;
+	width: 20px;
+	background-color: #fff;
+	border-radius: 3px;
+}
+
+.checkLabel:hover input ~ .checkmark {
+	background-color: #ccc;
+}
+
+.checkmark:after {
+	content: "";
+	position: absolute;
+	display: none;
+}
+
+.checkLabel input:checked ~ .checkmark:after {
+	display: block;
+}
+
+.checkLabel .checkmark:after {
+	left: 9px;
+	top: 5px;
+	width: 5px;
+	height: 10px;
+	border: solid rgb(244,89,4);
+	border-width: 0 3px 3px 0;
+	transform: rotate(45deg);
+}
+/*--categories--*/
+#allCats {
+	display: flex;
+	flex-direction: column;
+	height: 115px;
+	border-bottom: 1px solid rgba(31,31,31,0.3)
+}
+
+#categoryList {
+	font-weight: bolder;
+}
+
+#categoryList ul {
+	display: flex;
+	flex-direction: column;
+}
+
+.category a {
+	font-weight: normal;
+	text-decoration: none;
+	color: rgb(49,49,49);
+}
+
+.category a:hover {
+	text-decoration: underline;
+}
+
+#showmore a {
+	color: rgb(49,49,49);
+	font-size: 11px;
+}
