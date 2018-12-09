@@ -215,6 +215,7 @@ ul {
 	margin-left: -18px;
 	font-weight: bolder;
 }
+
 /*--making my own checkbox--*/
 .checkLabel {
 	margin-top: -10px;
@@ -293,4 +294,12 @@ ul {
 #showmore a {
 	color: rgb(49,49,49);
 	font-size: 11px;
+}
+/*--shipping-options--*/
+.shipping {
+	height: 150px;
+}
+.shipping ul {
+	display: flex;
+	flex-direction: column;
 }
