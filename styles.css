@@ -303,3 +303,30 @@ ul {
 	display: flex;
 	flex-direction: column;
 }
+/*-----------------*/
+/*-content-(items)-*/
+/*-----------------*/
+.item {
+	display: flex;
+	flex-direction: column;
+}
+
+.item img {
+	height: 135px;
+	width: 170px;
+}
+
+.item #itemTitle {
+	font-size: 12px;
+	text-decoration: none;
+}
+
+#itemTitle:visited {
+	color: rgb(49,49,49);
+}
+
+.item #shopName {
+	font-size: 10px;
+	color: rgb(103,103,103);
+	text-decoration: none;
+}
