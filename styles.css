@@ -188,14 +188,25 @@ ul {
 	color: rgb(49,49,49);
 }
 /*----------------*/
+/*-below-top------*/
+/*----------------*/
+.belowTop {
+	display: flex;
+}
+/*----------------*/
 /*-sidebar-general*/
 /*----------------*/
 .sidebar {
 	width: 270px;
-	height: 700px;
+	height: auto;
 	border: 1px solid rgba(31,31,31,0.3);
 	display: flex;
 	flex-direction: column;
+	margin-right: 10px;
+}
+
+.sectLabel {
+	font-weight: bold;
 }
 /*----------------*/
 /*-special-offers-*/
@@ -272,10 +283,6 @@ ul {
 	border-bottom: 1px solid rgba(31,31,31,0.3)
 }
 
-#categoryList {
-	font-weight: bolder;
-}
-
 #categoryList ul {
 	display: flex;
 	flex-direction: column;
@@ -291,24 +298,90 @@ ul {
 	text-decoration: underline;
 }
 
-#showmore a {
+.showmore a {
 	color: rgb(49,49,49);
 	font-size: 11px;
+}
+
+.showmore a:visited {
+	color: rgb(49,49,49);
 }
 /*--shipping-options--*/
 .shipping {
 	height: 150px;
+	border-bottom: 1px solid rgba(31,31,31,0.3)
 }
 .shipping ul {
 	display: flex;
 	flex-direction: column;
 }
+
+.shipLabel {
+	margin-bottom: 3px;
+}
+/*--material-options--*/
+.materials {
+	border-bottom: 1px solid rgba(31,31,31,0.3);
+}
+/*--color----options--*/
+.color {
+	border-bottom: 1px solid rgba(31,31,31,0.3);
+}
+/*can-be-personalized-*/
+.personalized {
+	border-bottom: 1px solid rgba(31,31,31,0.3);
+}
+/*-----occasion-----*/
+.occasion {
+	border-bottom: 1px solid rgba(31,31,31,0.3);
+}
+/*-----holiday-----*/
+.holidays {
+	border-bottom: 1px solid rgba(31,31,31,0.3);
+}
+/*-----shop-location-----*/
+.shopLoc {
+	border-bottom: 1px solid rgba(31,31,31,0.3);
+}
+
+#locationInput {
+	height: 38px;
+}
+
+#locButton {
+	height: 50px;
+	width: 50px;
+}
+/*-----item-type-----*/
+.itemType {
+	border-bottom: 1px solid rgba(31,31,31,0.3);
+}
+/*-----price-----*/
+.priceSelect {
+	border-bottom: 1px solid rgba(31,31,31,0.3);
+}
+
+#lowPrice, #highPrice {
+	width: 50px;
+	height: 38px;
+}
+/*-----order-options-----*/
+.orderOptions {
+	border-bottom: 1px solid rgba(31,31,31,0.3);
+}
 /*-----------------*/
 /*-content-(items)-*/
 /*-----------------*/
-.item {
+.each {
 	display: flex;
 	flex-direction: column;
+}
+
+.item {
+	width:800px;
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
 }
 
 .item img {
@@ -319,6 +392,7 @@ ul {
 .item #itemTitle {
 	font-size: 12px;
 	text-decoration: none;
+	color: rgb(49,49,49);
 }
 
 #itemTitle:visited {

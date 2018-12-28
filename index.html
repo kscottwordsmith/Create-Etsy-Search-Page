@@ -6,8 +6,7 @@
 	<link rel="stylesheet" href="styles.css">
 </head>
 <body>
-	<script src="items.js"></script>
-	<script src="main.js"></script>
+	
 	<div class="container">
 		<div class="topbar">
 			<!--Left Top Bar-->
@@ -87,59 +86,165 @@
 				</li>
 			</ul>
 		</div>
-		<div class="sidebar">
-			<!--Sidebar, containing suggested searches, sifting through materials, etc-->
-			<div class="specialOffers">
-				<!--subsection containing special offers in four categories-->
-				<ul id="specOff">
-					<li id="specOffLabel">
-						Special Offers
-					</li><br />
-					<li id="onSale">
-						<label class="checkLabel">On Sale
-							<input type="checkbox">
-							<span class="checkmark"></span>
-						</label>
-					</li>
-				</ul>
+		<div class="belowTop">
+			<div class="sidebar">
+				<!--Sidebar, containing suggested searches, sifting through materials, etc-->
+				<div class="specialOffers">
+					<!--subsection containing special offers in four categories-->
+					<ul id="specOff">
+						<li id="specOffLabel">
+							Special Offers
+						</li><br />
+						<li id="onSale">
+							<label class="checkLabel">On Sale
+								<input type="checkbox">
+								<span class="checkmark"></span>
+							</label>
+						</li>
+					</ul>
+				</div>
+				<div>
+					<ul id="allCats">
+						<li id="categoryList" class="sectLabel">All categories
+							<ul>
+								<li class="category">
+									<a href="https://www.etsy.com/search/home-and-living?q=whiskey&explicit=1">Home & Living</a>
+								</li>
+								<li class="category">
+									<a href="https://www.etsy.com/search/art-and-collectibles?q=whiskey&explicit=1">Art & Collectibles</a>
+								</li>
+								<li class="category">
+									<a href="https://www.etsy.com/search/weddings?q=whiskey&explicit=1">Weddings</a>
+								</li>
+								<li class="category">
+									<a href="https://www.etsy.com/search/clothing?q=whiskey&explicit=1">Clothing</a>
+								</li>
+							</ul>
+						</li>
+						<li class="showmore">
+							<a href="#">+ Show More</a>
+						</li>
+					</ul>
+				</div>
+				<div class="shipping">
+					<ul>
+						<li id="shippingLabel" class="sectLabel">Shipping</li>
+						<li class="shipCost"><input type="checkbox" id="freeLabel">Free Shipping</li>
+						<li class="shipCost"><input type="checkbox" id="oneDayLabel">Ready to ship in 1 business day</li>
+						<li class="shipCost"><input type="checkbox" id="threeDayLabel">Ready to ship within 3 business days</li>
+					</ul>
+				</div>
+				<div class="materials">
+					<ul>
+						<li id="materialLabel" class="sectLabel">Materials</li>
+						<li class="mats"><input type="checkbox" id="ceramicLabel">Ceramic</li>
+						<li class="mats"><input type="checkbox" id="corkLabel">Cork</li>
+						<li class="mats"><input type="checkbox" id="fabricLabel">Fabric</li>
+						<li class="mats"><input type="checkbox" id="glassLabel">Glass</li>
+						<li class="mats"><input type="checkbox" id="metalLabel">Metal</li>
+						<li class="showmore"><a href="#">+ Show More</a></li>
+					</ul>
+				</div>
+				<div class="color">
+					<ul>
+						<li id="colorLabel" class="sectLabel">Color</li>
+						<li class="colorOpt"><input type="checkbox" id="beigeLabel">Beige</li>
+						<li class="colorOpt"><input type="checkbox" id="blackLabel">Black</li>
+						<li class="colorOpt"><input type="checkbox" id="blueLabel">Blue</li>
+						<li class="colorOpt"><input type="checkbox" id="bronzeLabel">Bronze</li>
+						<li class="colorOpt"><input type="checkbox" id="brownlabel">Brown</li>
+						<li class="showmore"><a href="#">+ Show More</a></li>
+					</ul>
+				</div>
+				<div class="personalized">
+					<ul>
+						<li id="personalizedLabel" class="sectLabel">Can be personalized</li>
+						<li class="personal"><input type="checkbox" id="yesLabel">Yes</li>
+						<li class="personal"><input type="checkbox" id="noLabel">No</li>
+					</ul>
+				</div>
+				<div class="occasion">
+					<ul>
+						<li id="occasionLabel" class="sectLabel">Occasion</li>
+						<li class="occ"><input type="checkbox" id="annivLabel">Anniversary</li>
+						<li class="occ"><input type="checkbox" id="babyLabel">Baby shower</li>
+						<li class="occ"><input type="checkbox" id="bachMLabel">Bachelor party</li>
+						<li class="occ"><input type="checkbox" id="bachFLabel">Bachelorette party</li>
+						<li class="occ"><input type="checkbox" id="birthLabel">Birthday</li>
+						<li class="showmore"><a href="#">+ Show more</a></li>
+					</ul>
+				</div>
+				<div class="holidays">
+					<ul>
+						<li id="holidayLabel" class="sectLabel">Holiday</li>
+						<li class="hol"><input type="checkbox" id="xmasLabel">Christmas</li>
+						<li class="hol"><input type="checkbox" id="cincoLabel">Cinco de Mayo</li>
+						<li class="hol"><input type="checkbox" id="easterLabel">Easter</li>
+						<li class="hol"><input type="checkbox" id="fatherLabel">Father's Day</li>
+						<li class="hol"><input type="checkbox" id="halloweenLabel">Halloween</li>
+						<li class="showmore"><a href="#">+ Show more</a></li>
+					</ul>
+				</div>
+				<div class="shopLoc">
+					<ul>
+						<li id="shopLocLabel" class="sectLabel">Shop location</li>
+						<li class="loc"><input type="radio" name="location" value="any" checked="checked">Anywhere</li>
+						<li class="loc"><input type="radio" name="location" value="US">United States</li>
+						<li class="loc"><input type="radio" name="location" value="cus">Custom</li>
+						<li class="loc">
+							<input type="text" placeholder="Enter Location" id="locationInput"><input type="submit" value=">" name="locButton" id="locButton">
+						</li>
+					</ul>
+				</div>
+				<div class="itemType">
+					<ul>
+						<li id="typeLabel" class="sectLabel">Item type</li>
+						<li class="iType"><input type="radio" name="type" value="all" checked="checked">All items</li>
+						<li class="iType"><input type="radio" name="type" value="hand">Handmade</li>
+						<li class="iType"><input type="radio" name="type" value="vint">Vintage</li>
+					</ul>
+				</div>
+				<div class="priceSelect">
+					<ul>
+						<li id="priceLabel" class="sectLabel">Price ($)</li>
+						<li class="price"><input type="radio" name="priceOpt" value="any" checked="checked">Any price</li>
+						<li class="price"><input type="radio" name="priceOpt" value="1-24">Under $25</li>
+						<li class="price"><input type="radio" name="priceOpt" value="25-50">$25 to $50</li>
+						<li class="price"><input type="radio" name="priceOpt" value="50-100">$50 to $100</li>
+						<li class="price"><input type="radio" name="priceOpt" value="101">Over $100</li>
+						<li class="price"><input type="radio" name="priceOpt" value="cus">Custom</li>
+						<li class="price">
+							<input type="text" placeholder="Low" id="lowPrice"> to <input type="text" placeholder="High" id="highPrice">
+							<input type="submit" value=">" name="priceButton" id="priceButton">
+						</li>
+					</ul>
+				</div>
+				<div class="orderOptions">
+					<ul>
+						<li id="orderLabel" class="sectLabel">Ordering options</li>
+						<li class="orderOpt"><input type="checkbox" id="giftCards">Accepts Etsy gift cards</li>
+						<li class="orderOpt"><input type="checkbox" id="giftWrapped">Can be gift-wrapped</li>
+					</ul>
+				</div>
+				<div class="shipTo">
+					<ul>
+						<li class="sectLabel">Ship to</li>
+						<li><select class="shipCountries">
+							<option value="united-states" checked="checked">United States</option>
+							<option value="siberia">Siberia</option>
+							<option value="moon">The Friggin' Moon</option>
+						</select></li>
+					</ul>
+				</div>
 			</div>
-			<div>
-				<ul id="allCats">
-					<li id="categoryList">All categories
-						<ul>
-							<li class="category">
-								<a href="https://www.etsy.com/search/home-and-living?q=whiskey&explicit=1">Home & Living</a>
-							</li>
-							<li class="category">
-								<a href="https://www.etsy.com/search/art-and-collectibles?q=whiskey&explicit=1">Art & Collectibles</a>
-							</li>
-							<li class="category">
-								<a href="https://www.etsy.com/search/weddings?q=whiskey&explicit=1">Weddings</a>
-							</li>
-							<li class="category">
-								<a href="https://www.etsy.com/search/clothing?q=whiskey&explicit=1">Clothing</a>
-							</li>
-						</ul>
-					</li>
-					<li id="showmore">
-						<a href="#">+ Show More</a>
-					</li>
-				</ul>
-			</div>
-			<div class="shipping">
-				<ul>
-					<li class="shipLabel">Shipping</li>
-					<li class="shipCost"><input type="checkbox" id="freeLabel">Free Shipping</li>
-					<li class="shipCost"><input type="checkbox" id="oneDayLabel">Ready to ship in 1 business day</li>
-					<li class="shipCost"><input type="checkbox" id="threeDayLabel">Ready to ship within 3 business days</li>
-				</ul>
-			</div>
-		</div>
-		<div class="content">
-			<div class="item">
-				
+			<div class="content">
+				<div class="item">
+					
+				</div>
 			</div>
 		</div>
 	</div>
+	<script src="items.js"></script>
+	<script src="main.js"></script>
 </body>
 </html>
